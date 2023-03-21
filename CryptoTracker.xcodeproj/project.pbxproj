@@ -15,6 +15,7 @@
 		F90C347A29CA6C7A00FCB4DC /* CoinType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347929CA6C7A00FCB4DC /* CoinType.swift */; };
 		F90C347C29CA6D7500FCB4DC /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347B29CA6D7500FCB4DC /* Coin.swift */; };
 		F90C348029CA6DDA00FCB4DC /* CoinCapPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347F29CA6DDA00FCB4DC /* CoinCapPriceService.swift */; };
+		F90C348329CA795400FCB4DC /* PopoverCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C348229CA795400FCB4DC /* PopoverCoinViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F90C347929CA6C7A00FCB4DC /* CoinType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinType.swift; sourceTree = "<group>"; };
 		F90C347B29CA6D7500FCB4DC /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		F90C347F29CA6DDA00FCB4DC /* CoinCapPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCapPriceService.swift; sourceTree = "<group>"; };
+		F90C348229CA795400FCB4DC /* PopoverCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCoinViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		F90C346129CA26B400FCB4DC /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				F90C348129CA794200FCB4DC /* models */,
 				F90C347E29CA6DB000FCB4DC /* types */,
 				F90C347D29CA6DA800FCB4DC /* services */,
 				F90C346229CA26B400FCB4DC /* CryptoTrackerApp.swift */,
@@ -95,6 +98,14 @@
 				F90C347929CA6C7A00FCB4DC /* CoinType.swift */,
 			);
 			path = types;
+			sourceTree = "<group>";
+		};
+		F90C348129CA794200FCB4DC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F90C348229CA795400FCB4DC /* PopoverCoinViewModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			files = (
 				F90C347429CA368C00FCB4DC /* AppDelegate.swift in Sources */,
 				F90C348029CA6DDA00FCB4DC /* CoinCapPriceService.swift in Sources */,
+				F90C348329CA795400FCB4DC /* PopoverCoinViewModel.swift in Sources */,
 				F90C346329CA26B400FCB4DC /* CryptoTrackerApp.swift in Sources */,
 				F90C347A29CA6C7A00FCB4DC /* CoinType.swift in Sources */,
 				F90C347C29CA6D7500FCB4DC /* Coin.swift in Sources */,
