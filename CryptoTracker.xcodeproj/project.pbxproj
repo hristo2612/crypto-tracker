@@ -12,6 +12,9 @@
 		F90C346A29CA26B500FCB4DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90C346929CA26B500FCB4DC /* Preview Assets.xcassets */; };
 		F90C347429CA368C00FCB4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347329CA368C00FCB4DC /* AppDelegate.swift */; };
 		F90C347829CA637000FCB4DC /* PopoverCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347729CA637000FCB4DC /* PopoverCoinView.swift */; };
+		F90C347A29CA6C7A00FCB4DC /* CoinType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347929CA6C7A00FCB4DC /* CoinType.swift */; };
+		F90C347C29CA6D7500FCB4DC /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347B29CA6D7500FCB4DC /* Coin.swift */; };
+		F90C348029CA6DDA00FCB4DC /* CoinCapPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347F29CA6DDA00FCB4DC /* CoinCapPriceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F90C346B29CA26B500FCB4DC /* CryptoTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoTracker.entitlements; sourceTree = "<group>"; };
 		F90C347329CA368C00FCB4DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F90C347729CA637000FCB4DC /* PopoverCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCoinView.swift; sourceTree = "<group>"; };
+		F90C347929CA6C7A00FCB4DC /* CoinType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinType.swift; sourceTree = "<group>"; };
+		F90C347B29CA6D7500FCB4DC /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		F90C347F29CA6DDA00FCB4DC /* CoinCapPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCapPriceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		F90C346129CA26B400FCB4DC /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				F90C347E29CA6DB000FCB4DC /* types */,
+				F90C347D29CA6DA800FCB4DC /* services */,
 				F90C346229CA26B400FCB4DC /* CryptoTrackerApp.swift */,
 				F90C346629CA26B500FCB4DC /* Assets.xcassets */,
 				F90C346B29CA26B500FCB4DC /* CryptoTracker.entitlements */,
@@ -70,6 +78,23 @@
 				F90C346929CA26B500FCB4DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F90C347D29CA6DA800FCB4DC /* services */ = {
+			isa = PBXGroup;
+			children = (
+				F90C347F29CA6DDA00FCB4DC /* CoinCapPriceService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		F90C347E29CA6DB000FCB4DC /* types */ = {
+			isa = PBXGroup;
+			children = (
+				F90C347B29CA6D7500FCB4DC /* Coin.swift */,
+				F90C347929CA6C7A00FCB4DC /* CoinType.swift */,
+			);
+			path = types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F90C347429CA368C00FCB4DC /* AppDelegate.swift in Sources */,
+				F90C348029CA6DDA00FCB4DC /* CoinCapPriceService.swift in Sources */,
 				F90C346329CA26B400FCB4DC /* CryptoTrackerApp.swift in Sources */,
+				F90C347A29CA6C7A00FCB4DC /* CoinType.swift in Sources */,
+				F90C347C29CA6D7500FCB4DC /* Coin.swift in Sources */,
 				F90C347829CA637000FCB4DC /* PopoverCoinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
