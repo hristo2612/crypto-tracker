@@ -3,10 +3,12 @@ import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
+    let popover = NSPopover()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
         setupMenuBar()
+        setupPopover()
     }
 }
 
@@ -23,13 +25,28 @@ extension AppDelegate {
     }
     
     @objc func handleClick() {
-        let popover = NSPopover()
-        let view = NSHostingView(rootView: PopoverCoinView())
+        if popover.isShown {
+            popover.performClose(nil)
+            return
+        }
+        
+        popover.show(relativeTo: statusItem!.button!.bounds, of: statusItem!.button!, preferredEdge: .minY)
+        
+        // Close popover when user clicks outside of it
+        NSApplication.shared.activate(ignoringOtherApps: true)
+        NSEvent.addGlobalMonitorForEvents(matching: .leftMouseDown) { _ in
+            self.popover.performClose(nil)
+        }
+    }
+}
+
+// MARK: - Popover
+
+extension AppDelegate {
+    func setupPopover() {
         let hostingController = NSHostingController(rootView: PopoverCoinView())
         popover.behavior = .transient
         popover.contentViewController = hostingController
-        popover.contentViewController?.view = hostingController.view
-        popover.show(relativeTo: statusItem!.button!.bounds, of: statusItem!.button!, preferredEdge: .minY)
         popover.contentSize = hostingController.view.fittingSize
     }
 }

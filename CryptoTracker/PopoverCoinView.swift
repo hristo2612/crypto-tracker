@@ -2,11 +2,19 @@ import SwiftUI
 
 struct PopoverCoinView: View {
     var body: some View {
-        HStack {
-            Text("Hello, World!")
-                .font(.system(size: 12))
+        Spacer().frame(height: 10)
+        VStack(spacing: 13) {
+            VStack {
+                Text("Bitcoin").font(.largeTitle)
+                Text("28,000$").font(.title.bold())
+            }
+            
+            Divider()
+            
+            Button("Quit CryptoTracker") {
+                NSApp.terminate(self)
+            }
         }
-        .padding()
     }
 }
 
