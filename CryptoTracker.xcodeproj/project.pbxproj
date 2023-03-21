@@ -11,6 +11,7 @@
 		F90C346729CA26B500FCB4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90C346629CA26B500FCB4DC /* Assets.xcassets */; };
 		F90C346A29CA26B500FCB4DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90C346929CA26B500FCB4DC /* Preview Assets.xcassets */; };
 		F90C347429CA368C00FCB4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347329CA368C00FCB4DC /* AppDelegate.swift */; };
+		F90C347829CA637000FCB4DC /* PopoverCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C347729CA637000FCB4DC /* PopoverCoinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F90C346929CA26B500FCB4DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F90C346B29CA26B500FCB4DC /* CryptoTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoTracker.entitlements; sourceTree = "<group>"; };
 		F90C347329CA368C00FCB4DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F90C347729CA637000FCB4DC /* PopoverCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCoinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				F90C346B29CA26B500FCB4DC /* CryptoTracker.entitlements */,
 				F90C346829CA26B500FCB4DC /* Preview Content */,
 				F90C347329CA368C00FCB4DC /* AppDelegate.swift */,
+				F90C347729CA637000FCB4DC /* PopoverCoinView.swift */,
 			);
 			path = CryptoTracker;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				F90C347429CA368C00FCB4DC /* AppDelegate.swift in Sources */,
 				F90C346329CA26B400FCB4DC /* CryptoTrackerApp.swift in Sources */,
+				F90C347829CA637000FCB4DC /* PopoverCoinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
