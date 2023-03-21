@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F90C346329CA26B400FCB4DC /* CryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C346229CA26B400FCB4DC /* CryptoTrackerApp.swift */; };
-		F90C346529CA26B400FCB4DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C346429CA26B400FCB4DC /* ContentView.swift */; };
 		F90C346729CA26B500FCB4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90C346629CA26B500FCB4DC /* Assets.xcassets */; };
 		F90C346A29CA26B500FCB4DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90C346929CA26B500FCB4DC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		F90C345F29CA26B400FCB4DC /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90C346229CA26B400FCB4DC /* CryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerApp.swift; sourceTree = "<group>"; };
-		F90C346429CA26B400FCB4DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F90C346629CA26B500FCB4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F90C346929CA26B500FCB4DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F90C346B29CA26B500FCB4DC /* CryptoTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoTracker.entitlements; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				F90C346229CA26B400FCB4DC /* CryptoTrackerApp.swift */,
-				F90C346429CA26B400FCB4DC /* ContentView.swift */,
 				F90C346629CA26B500FCB4DC /* Assets.xcassets */,
 				F90C346B29CA26B500FCB4DC /* CryptoTracker.entitlements */,
 				F90C346829CA26B500FCB4DC /* Preview Content */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90C346529CA26B400FCB4DC /* ContentView.swift in Sources */,
 				F90C346329CA26B400FCB4DC /* CryptoTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +270,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +298,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

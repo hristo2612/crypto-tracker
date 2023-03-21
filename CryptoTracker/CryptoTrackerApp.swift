@@ -4,7 +4,7 @@ import SwiftUI
 struct CryptoTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmptyView().frame(width: 0, height: 0)
         }
     }
 }
