@@ -21,6 +21,7 @@ class CoinCapPriceService: NSObject {
         wsTask = session.webSocketTask(with: url)
         wsTask?.delegate = self
         wsTask?.resume()
+        self.recieveMessage()
     }
     
     private func recieveMessage() {

@@ -2,13 +2,19 @@ import Cocoa
 import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
+    let coinCapService = CoinCapPriceService()
     var statusItem: NSStatusItem?
     let popover = NSPopover()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
+        setupCoinCapService()
         setupMenuBar()
         setupPopover()
+    }
+    
+    func setupCoinCapService() {
+        coinCapService.connect()
     }
 }
 
