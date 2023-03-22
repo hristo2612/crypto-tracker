@@ -2,7 +2,7 @@ import Foundation
 
 enum CoinType: String, Identifiable, CaseIterable {
     case bitcoin
-    case etherium
+    case ethereum
     case dogecoin
     
     var id: Self { self }

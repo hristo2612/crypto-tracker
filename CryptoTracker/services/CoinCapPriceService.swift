@@ -7,8 +7,8 @@ class CoinCapPriceService: NSObject {
     private var wsTask: URLSessionWebSocketTask?
     private var pingTryCount = 0
     
-    private let coinDictionarySubject = CurrentValueSubject<[String: Coin], Never>([:])
-    private var coinDictionary: [String: Coin] { coinDictionarySubject.value }
+    let coinDictionarySubject = CurrentValueSubject<[String: Coin], Never>([:])
+    var coinDictionary: [String: Coin] { coinDictionarySubject.value }
     
     private let connectionStateSubject = CurrentValueSubject<Bool, Never>(false)
     private var isConnected: Bool { connectionStateSubject.value }
@@ -25,7 +25,7 @@ class CoinCapPriceService: NSObject {
         wsTask?.delegate = self
         wsTask?.resume()
         self.recieveMessage()
-        self.schedulePing()
+        // self.schedulePing()
     }
     
     func startMonitorNetwork() {
@@ -49,12 +49,12 @@ class CoinCapPriceService: NSObject {
             case .success(let message):
                 switch message {
                 case .string(let text):
-                    print("Received text message: \(text)")
+                    // print("Received text message: \(text)")
                     if let data = text.data(using: .utf8) {
                         self?.onReceiveData(data)
                     }
                 case .data(let data):
-                    print("Received binary data: \(data)")
+                    // print("Received binary data: \(data)")
                     self?.onReceiveData(data)
                 default: break
                 }

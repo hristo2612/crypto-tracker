@@ -3,6 +3,7 @@ import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     let coinCapService = CoinCapPriceService()
+    var popoverCoinViewModel: PopoverCoinViewModel!
     var statusItem: NSStatusItem?
     let popover = NSPopover()
 
@@ -51,9 +52,12 @@ extension AppDelegate {
 
 extension AppDelegate {
     func setupPopover() {
-        let hostingController = NSHostingController(rootView: PopoverCoinView())
+        popoverCoinViewModel = .init(service: coinCapService)
+        let hostingController = NSHostingController(rootView: PopoverCoinView(viewModel: popoverCoinViewModel))
         popover.behavior = .transient
         popover.contentViewController = hostingController
-        popover.contentSize = hostingController.view.fittingSize
+        popover.contentSize = CGSize(width: 250, height: hostingController.view.fittingSize.height)
+        
+        hostingController.view.frame = CGRect(x: 0, y: 0, width: 250, height: hostingController.view.fittingSize.height)
     }
 }
